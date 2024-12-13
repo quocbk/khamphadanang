@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyện xưa Đà Thành</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header.navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightcyan;
+            padding: 10px 20px;
+        }
+
+        header.navbar .logo {
+            max-width: 150px;
+        }
+
+        header.navbar .navbar-item {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        header.navbar .navbar-search {
+            display: flex;
+        }
+
+        header.navbar .search-input {
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        .hero-image {
+            text-align: center;
+            background: url('pct.jpg') center/cover no-repeat;
+            padding: 50px 20px;
+            color: #fff;
+        }
+
+        .hero-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-button {
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #74C0FC;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .fun-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .fact {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .content-item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .content-img {
+            flex: 1;
+            max-width: 100%;
+        }
+
+        .text-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        footer .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        footer .col {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+        }
+
+        .social-icons i {
+            margin: 0 10px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            header.navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header.navbar .navbar-item {
+                margin: 5px 0;
+            }
+
+            .content-item {
+                flex-direction: column;
+            }
+
+            footer .row {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.5rem;
+            }
+
+            .hero-button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+
+            .content-img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html"><img src="logo.jfif" class="logo"></a>
+        <nav>
+            <a href="lntt.html" class="navbar-item">Làng nghề</a>
+            <a href="skls.html" class="navbar-item">Sự kiện lịch sử</a>
+            <a href="cvls.html" class="navbar-item">Cổ vật lịch sử</a>
+            <a href="nvls.html" class="navbar-item">Nhân vật lịch sử</a>
+            <a href="btls.html" class="navbar-item">Bảo tàng lịch sử</a>
+            <a href="lhtt.html" class="navbar-item">Lễ hội truyền thống</a>
+        </nav>
+        <form class="navbar-search" action="search.html" method="GET">
+            <input type="text" name="query" placeholder="Search..." class="search-input" required>
+            <button type="submit" class="search-button">
+                <i class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"></i>
+            </button>
+        </form>
+    </header>
+
+    <main>
+        <section class="hero-image">
+            <h1 class="hero-title">Chuyện xưa Đà Thành</h1>
+            <p class="hero-description">Chuyện xưa Đà Thành là trang web chuyên cung cấp thông tin dữ liệu về lịch sử Đà Nẵng.</p>
+            <a href="#third-session" class="hero-button">Xem thêm</a>
+        </section>
+
+        <section class="fun-facts">
+            <div class="fact">
+                <h3>Danh hiệu</h3>
+                <p>Một trong những “thành phố đáng sống nhất Việt Nam”.</p>
+            </div>
+            <div class="fact">
+                <h3>Tên gọi</h3>
+                <p>Tên Đà Nẵng là phiên âm tiếng Việt của từ da nak trong tiếng Chăm...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="logo.jfif" class="logo2">
+                <p>Chuyện xưa Đà Thành là trang web cung cấp thông tin lịch sử địa phương.</p>
+            </div>
+        </div>
+        <p class="copyright">© 2024 NTN - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
