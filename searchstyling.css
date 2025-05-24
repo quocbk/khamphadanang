@@ -297,7 +297,7 @@ section.hero-image {
     box-sizing: border-box;
     background-size: cover;
     background-image: url('searchhero.jpg!bw700');
-    background-color: #1A2F4B; /* Dark background for contrast */
+    background-color: rgb(13, 110, 253); /* Dark background for contrast */
     color: white;
     padding: 20px;
     text-align: center;
@@ -358,9 +358,10 @@ section.hero-image {
 
 /* Title Styling */
 .result-title {
-    font-size: 1.5em;
+    font-size: 2.5em;
     color: #1A2F4B;
-    margin: 0;
+    margin: auto;
+    padding-left: 150px;
 }
 
 /* Snippet Styling */
@@ -417,7 +418,7 @@ footer {
     padding: 32px 160px;
     /* width: 100%; */
     margin-bottom: 0;
-    background: var(--gradient-main);
+    background: rgb(13, 110, 253);
     color: #fff;
     line-height: 20px;
 }
